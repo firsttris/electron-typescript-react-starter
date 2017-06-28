@@ -42,10 +42,10 @@ class Nav extends React.Component<any, State> {
                     backgroundColor: '#222'
                 }}>
                     <div onClick={this.onClick.bind(this, 1)}>
-                        <LinkItem focus={this.state.linkitem === 1} path="/" name="Tracking"/>
+                        <LinkItem focus={this.state.linkitem === 1} path="/" name="App"/>
                     </div>
                     <div onClick={this.onClick.bind(this, 2)}>
-                        <LinkItem focus={this.state.linkitem === 2} path="/users" name="Users"/>
+                        <LinkItem focus={this.state.linkitem === 2} path="/What" name="What"/>
                     </div>
                     <li style={{
                         display: 'block',

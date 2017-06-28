@@ -5,11 +5,9 @@ const {
     Switch
 } = require('react-router-dom');
 
-import Tracking from './../container/Tracking/Tracking'
-import Users from './../container/UserManagement/Users'
-import CreateUser from './../container/UserManagement/CreateUser'
-import UpdateUser from './../container/UserManagement/UpdateUser'
 import Nav from './../container/Navigation/Nav'
+import NotFound from './../components/NotFound'
+import App from './../container/App'
 
 interface Props {
 }
@@ -26,10 +24,8 @@ class Routing extends React.Component<Props, State> {
                 <div>
                     <Nav/>
                     <Switch>
-                        <Route path="/users" component={Users}/>
-                        <Route path="/createUser" component={CreateUser}/>
-                        <Route path="/updateUser" component={UpdateUser}/>
-                        <Route component={Tracking}/>
+                        <Route exact path="/" component={App}/>
+                        <Route component={NotFound}/>
                     </Switch>
                 </div>
             </MemoryRouter>

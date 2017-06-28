@@ -5,7 +5,7 @@ let mainWindow: Electron.BrowserWindow;
 
 // Keep a reference for dev mode
 let dev = false;
-if (process.argv.indexOf('--devx') > 0) {
+if (process.argv.indexOf('--dev') > 0) {
     dev = true;
 }
 
