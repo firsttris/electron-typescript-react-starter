@@ -15,7 +15,7 @@
     "electron-prod": "electron .",
     "electron-dev": "electron . --dev",
     "dev-server": "webpack-dev-server --hot --config=./webpack.dev.config.js",
-    "webpack-build": "webpack --config webpack.config.js",
+    "webpack-build": "webpack --config webpack.prod.config.js",
     "test": "jest --coverage",
     "test-watch": "jest --coverage --watchAll",
     "electron-package": "electron-packager ./ --out=./builds --overwrite",
