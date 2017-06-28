@@ -43,13 +43,13 @@ const commonConfig = {
 module.exports = [
     Object.assign(
         {
-            node: {
-                __dirname: false,
-                __filename: false
-            },
             target: 'electron-main',
             entry: {
                 main: './src/main.ts'
+            },
+            node: {
+                __dirname: false,
+                __filename: false
             }
         },
         commonConfig),
