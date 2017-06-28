@@ -6,7 +6,7 @@
   "homepage": "teufel-it.de",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/firsttris/electron-typescript-react.git"
   },
   "license": "MIT",
   "main": "dist/main.js",
