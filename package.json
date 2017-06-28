@@ -1,7 +1,7 @@
 {
-  "name": "electron-react",
+  "name": "electron-typescript-react",
   "version": "1.0.0",
-  "description": "minimal react+typescript+electron+webpack starter",
+  "description": "minimal electron+typescript+react starter",
   "author": "Tristan Teufel",
   "homepage": "teufel-it.de",
   "repository": {
