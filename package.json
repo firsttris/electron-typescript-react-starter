@@ -46,6 +46,7 @@
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-transition-group": "^1.2.0",
+    "react-test-renderer": "^15.6.1",
     "reactstrap": "^4.6.2",
     "redux": "^3.7.0",
     "redux-thunk": "^2.2.0",
@@ -68,10 +69,10 @@
       "js"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
     },
     "transform": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./jest/fileTransformer.js",
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     }
   }
