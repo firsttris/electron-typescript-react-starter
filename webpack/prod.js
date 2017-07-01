@@ -1,4 +1,4 @@
-const { main, renderer } = require('./base');
+const { renderer } = require('./base');
 const webpack = require('webpack');
 const BabiliPlugin = require('babili-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -32,4 +32,4 @@ renderer.plugins.push(
 );
 renderer.devtool = 'source-map';
 
-module.exports = [main, renderer];
+module.exports = renderer;

@@ -34,10 +34,6 @@ module.exports = {
             target: 'electron-main',
             entry: {
                 main: './src/main.ts'
-            },
-            node: {
-                __dirname: false,
-                __filename: false
             }
         },
         commonConfig),
