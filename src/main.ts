@@ -37,8 +37,13 @@ function onReady() {
     mainWindow.loadURL(indexPath);
     if (dev) {
         mainWindow.webContents.openDevTools();
-        BrowserWindow.addDevToolsExtension('./devtools/React/2.4.0_0');
-        BrowserWindow.addDevToolsExtension('./devtools/Redux/2.15.1_0');
+        const added = BrowserWindow.getDevToolsExtensions &&
+            BrowserWindow.getDevToolsExtensions().hasOwnProperty('Redux DevTools') &&
+            BrowserWindow.getDevToolsExtensions().hasOwnProperty('React Developer Tools');
+        if (!added) {
+            BrowserWindow.addDevToolsExtension('./devtools/React/2.4.0_0');
+            BrowserWindow.addDevToolsExtension('./devtools/Redux/2.15.1_0');
+        }
     }
     mainWindow.on('close', () => app.quit());
 }

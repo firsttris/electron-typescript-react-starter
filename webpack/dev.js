@@ -1,4 +1,4 @@
-const { renderer } = require('./base');
+const { renderer, main } = require('./base');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 renderer.module.rules.push(
@@ -25,4 +25,4 @@ renderer.plugins.push(
 );
 renderer.devtool = "eval";
 
-module.exports = renderer;
+module.exports = [renderer, main];

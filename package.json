@@ -11,9 +11,9 @@
   "license": "MIT",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "yarn build-main && concurrently \"yarn webpack-server\" \"wait-on http://localhost:8080 && yarn electron-dev\"",
+    "dev": "concurrently \"yarn webpack-server\" \"wait-on http://localhost:8080 && yarn electron-dev\"",
     "electron-prod": "electron .",
-    "electron-dev": "electron . --dev",
+    "electron-dev": "yarn build-main && electron . --dev",
     "test": "jest --coverage",
     "test-watch": "jest --coverage --watchAll",
     "webpack-server": "webpack-dev-server --hot --env=dev --progress --colors",
